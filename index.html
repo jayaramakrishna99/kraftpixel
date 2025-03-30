@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="page-container">
+        <!-- mobile-header -->
+        <header class="mobile-header">
+            <div class="logo-container">
+                <span class="logo-text">Untitled UI</span>
+            </div>
+            <button class="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+             </button>
+        </header>
+        <!-- desktop-header -->
+         <header class="desktop-header">
+            <div class="logo-container">
+                <span class="logo-text">Untitled UI</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown">
+                            Products
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown">
+                            Resources
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Log in</a>
+                <a href="#" class="signuo-btn">Sign up</a>
+            </div>
+         </header>
+         <main>
+            <!-- About us -->
+             <section class="about-section">
+                <div class="about-header">
+                    <span class="section-label">About us</span>
+                    <h1>About the company</h1>
+                    <p class="subtitle">Learn more about the company and the team behind it.</p>
+                </div>
+                <!-- journey -->
+                 <div class="journey-section">
+                    <div class="journey-content">
+                        <span class="section-label">We’ve helped hundreds of companies</span>
+                        <h2>We’re only just getting started on our journey</h2>
+                    </div>
+                    <p class="journey-description mobile-only">Everything you need to build modern UI and great products. We’ve done all the heavy lifting so you don’t have to — the perfect starting point for any project.</p>
+                    <div class="office-image-container mobile-only">
+                        <img src="assets\images\office-mobile.jpg"
+                            alt="office image"
+                            class="office-image-mobile">
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">400+</h3>
+                            <p class="stat-label">Projects completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">600%</h3>
+                            <p class="stat-label">Return on investments</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10k</h3>
+                            <p class="stat-label">Global downloads</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">200+</h3>
+                            <p class="stat-label">5-star reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="office-image-container desktop-only">
+                        <img src="assets\images\office-desktop.jpg"
+                            alt="office image"
+                            class="office-image">
+                    </div>
+                 </div>
+             </section>
+         </main>
+    </div>
 </body>
 </html>

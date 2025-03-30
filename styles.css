@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    color: #000000;
+    background: #FFFFFF;
+    line-height: 1.5;
+}
+.page-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.mobile-header,.desktop-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #F2F4F7;
+}
+
+.desktop-header{
+    display: none;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #667085;
+    font-weight: 500;
+}
+
+.main-nav a.active { color: #000000;}
+
+.login-btn{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+.signup-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #7F56D9;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.about-section{
+    padding: 48px 0;
+    text-align: center;
+}
+.section-label{
+    color: #7F56D9;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.subtitle{
+    color: #667085;
+    font-family: 12px;
+}
+.journey-section{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.journey-descrption{
+    color: #667085;
+    margin-bottom: 32px;
+}
+
+.office-image-container{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.office-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: left;
+}
+.stat-number{
+    font-size: 36px;
+    font-weight: 600;
+    color: #7F56D9;
+}
+
+.mobile-only{
+    display: block;
+}
+.desktop-only{
+    display: none;
+}
+@media(min-width:768px){
+    .page-container{padding: 0 32px;}
+    .mobile-header{display: none;}
+    .desktop-header{display: flex;}
+
+    h1 {font-size: 36px;}
+    h2 {font-size: 30px;}
+
+    .journey-section{
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .office-image-container{ flex: 1;}
+    .journey-content{flex: 1;}
+    .stats-grid{grid-template-columns: 1fr 1fr;}
+    .mobile-only{display: none;}
+    .desktop-only{display: block;}
+}
+
+@media(min-width:1024px){
+    .stats-grid{ grid-template-columns: repeat(2,1fr);}
+}
